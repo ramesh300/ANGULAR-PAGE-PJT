@@ -1,0 +1,27 @@
+
+
+<router-outlet></router-outlet>
+
+
+
+
+<div class="container">
+
+  {{Name}}
+  <div class="card-columns" *ngFor="let item of allProducts">
+    <div class="card bg-primary">
+      <div class="card-body text-center">
+        <p class="card-text">{{item.ProductId}}</p>
+        <p class="card-text">{{item.ProductName}}</p>
+        <p class="card-text">{{item.ProductFeatures}}</p>
+        <button class="btn btn-primary" style="margin-right:5px">Buy Now</button>
+        <button class="btn btn-primary">Add to Cart</button>
+        <br>
+        <br>
+        <button>-</button>
+        <input type="text" style="width:50px">
+        <button>+</button>
+      </div>
+    </div>
+  </div>
+</div> 
